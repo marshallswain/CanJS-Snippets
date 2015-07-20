@@ -4,19 +4,13 @@ import can from 'can';
 import 'can/map/define/';
 
 const Model = can.Model.extend('${1:ModelName}', {
-  findAll: 'GET ${2:/url}',
-  findOne: 'GET ${2:/url}/{id}',
-  create:  'POST ${2:/url}',
-  update:  'PUT ${2:/url}/{id}',
-  destroy: 'DELETE ${2:/url}/{id}' 
+  resource: '${2:/resource/url}'
 }, {
-  // Define attributes on each model instance.
   define: {
     ${3}
   }
 });
 
-// Define attributes on the Model.List.
 Model.List = Model.List.extend({
   ${4}
 });
@@ -24,8 +18,8 @@ Model.List = Model.List.extend({
 export default Model;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>canjs-model</tabTrigger>
+  <tabTrigger>canjs-model-RESTful</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>CanJS Model Definition</description>
+  <description>CanJS RESTful Model Definition</description>
 </snippet>
