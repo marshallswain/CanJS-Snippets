@@ -1,0 +1,28 @@
+<snippet>
+  <content><![CDATA[
+<!-- The component template to be tested -->
+<script type='text/stache' id="demo" can-autorender>
+  <can-import from="components/chart-component/line-chart/" />
+
+  <${1:tag-name}></${1:tag-name}>
+
+</script>
+
+<!-- The data for the above template. -->
+<script src='../../../node_modules/steal/steal.js'
+        main="can/view/autorender/">
+
+  import can from "can";
+  import $ from "jquery";
+
+  $("#demo").viewModel().attr({
+    ${1:viewModel}
+  });
+</script>
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>can-modlet-test-html</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html, txt.html.mustache</scope>
+  <description>CanJS Modlet Test.html</description>
+</snippet>

@@ -1,19 +1,10 @@
 <snippet>
   <content><![CDATA[
-import can from 'can/';
-import 'can/util/fixture/';
-
-var data = {
-  ${1}
-};
-
-can.fixture('POST ${2:/resource/url}', function(){
-  return data;
-});
+<can-import from="$1:{path/to/module}">
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-fixture</tabTrigger>
+  <tabTrigger>can-import</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope></scope> -->
-  <description>CanJS Fixture</description>
+  <description>can-import tag</description>
 </snippet>

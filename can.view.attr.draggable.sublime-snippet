@@ -1,0 +1,27 @@
+<snippet>
+  <content><![CDATA[
+import $ from 'jquery';
+import 'jquery-ui';
+import can from 'can';
+
+/**
+ * Makes an element draggable by putting a `ui-draggable` attribute on it in the template.
+ * You can also put a ui-drag-handle on a child element to make it the drag handle.
+ * If no drag-handle is specified, the `ui-draggable` will be the drag handle.
+ */
+can.view.attr('ui-draggable', function(el) {
+  // Check if the element has a ui-drag-handle.
+  var $el = $(el),
+    dragHandle = $el.find('[ui-drag-handle]');
+
+  $el.draggable({
+    handle: (dragHandle.length ? dragHandle : null)
+  });
+});
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>can-view-attr-ui-draggable</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>CanJS View Attr jQuery-UI Draggable</description>
+</snippet>

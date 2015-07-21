@@ -1,19 +1,15 @@
 <snippet>
   <content><![CDATA[
 import can from 'can';
-import 'can/map/define/';
 
-let VM = can.Map.extend({
-  define: {
-    ${1}
-  }
+// See http://canjs.com/docs/can.view.tag.html for usage
+can.view.tag('${1:attrName}', function(el, tagData){
+  ${2}
 });
-
-export default VM;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-modlet-vm</tabTrigger>
+  <tabTrigger>can-view-tag</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>CanJS Modlet ViewModel</description>
+  <description>CanJS View Tag</description>
 </snippet>

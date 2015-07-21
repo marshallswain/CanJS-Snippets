@@ -2,12 +2,12 @@
   <content><![CDATA[
 import can from 'can';
 
-can.view.attr("${1:attrName}", function( el, attrData ) {
+can.view.attr('${1:attrName}', function( el, attrData ) {
   ${2}
 });
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>canjs-view-attr</tabTrigger>
+  <tabTrigger>can-view-attr</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
   <description>CanJS View Attr</description>

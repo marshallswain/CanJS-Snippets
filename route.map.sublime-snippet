@@ -1,19 +1,10 @@
 <snippet>
   <content><![CDATA[
-import can from 'can';
-import 'can/map/define/';
-
-let VM = can.Map.extend({
-  define: {
-    ${1}
-  }
-});
-
-export default VM;
+can.route.map(${1:appstate});
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-modlet-vm</tabTrigger>
+  <tabTrigger>can-route-map</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>CanJS Modlet ViewModel</description>
+  <description>can.route.map() - Cross-bind can.route to a can.Map.</description>
 </snippet>

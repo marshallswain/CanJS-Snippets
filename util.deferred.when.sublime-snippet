@@ -1,19 +1,12 @@
 <snippet>
   <content><![CDATA[
-import can from 'can';
-import 'can/map/define/';
-
-let VM = can.Map.extend({
-  define: {
-    ${1}
-  }
+can.when(${1:deferredOne, deferredTwo...}).then(function(${2:resolvedOne, resolvedTwo...}){
+  ${3}
 });
-
-export default VM;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-modlet-vm</tabTrigger>
+  <tabTrigger>can-def-when</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>CanJS Modlet ViewModel</description>
+  <description>can.when() - Wait for deferreds to resolve. </description>
 </snippet>

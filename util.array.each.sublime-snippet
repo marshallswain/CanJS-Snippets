@@ -1,19 +1,12 @@
 <snippet>
   <content><![CDATA[
-import can from 'can';
-import 'can/map/define/';
-
-let VM = can.Map.extend({
-  define: {
-    ${1}
-  }
+can.each(${1:object or array}, function( ${2:value}, ${3:index} ) {
+  ${4}
 });
-
-export default VM;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-modlet-vm</tabTrigger>
+  <tabTrigger>can-array-each</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>CanJS Modlet ViewModel</description>
+  <description>can.each() - Iterate through an object or array. </description>
 </snippet>

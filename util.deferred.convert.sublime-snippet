@@ -1,19 +1,12 @@
 <snippet>
   <content><![CDATA[
-import can from 'can';
-import 'can/map/define/';
-
-let VM = can.Map.extend({
-  define: {
-    ${1}
-  }
-});
-
-export default VM;
+function convertDeferred(dfd) {
+  return can.isDeferred(dfd) ? dfd : can.Deferred(dfd);
+}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-modlet-vm</tabTrigger>
+  <tabTrigger>can-def-convert</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>CanJS Modlet ViewModel</description>
+  <description>convertDeferred() - Convert any object to a Deferred.</description>
 </snippet>

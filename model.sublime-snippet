@@ -24,7 +24,7 @@ Model.List = Model.List.extend({
 export default Model;
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>canjs-model</tabTrigger>
+  <tabTrigger>can-model</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
   <description>CanJS Model Definition</description>
