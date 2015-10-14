@@ -1,21 +1,30 @@
 <snippet>
   <content><![CDATA[
-import can from 'can';
-import './styles.less!';
-import template from './template.stache!';
-import VM from './view-model';
+import Component from 'can/component/';
+import Map from 'can/map/';
+import 'can/map/define/';
+import './${1:tag-name}.less!';
+import template from './${1:tag-name}.stache!';
 
-can.Component.extend({
+export const ViewModel = Map.extend({
+  define: {
+    message: {
+      value: 'This is the ${1:tag-name} component'
+    }
+  }
+});
+
+export default Component.extend({
   tag: '${1:tag-name}',
-  template: template,
-  viewModel: VM,
-  ${2:helpers:{\},}
-  ${3:events:{\}}
+  viewModel: ViewModel,
+  template${2:,
+  helpers:{\}}${3:,
+  events:{\}}
 });
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>can-component</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>CanJS Modlet Component</description>
+  <description>CanJS Component</description>
 </snippet>
