@@ -24,7 +24,7 @@
 </can-component>
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-component-web</tabTrigger>
+  <tabTrigger>can.component-web</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope></scope> -->
   <description>A WebComponent-style CanJS Component</description>

@@ -1,10 +1,12 @@
 <snippet>
   <content><![CDATA[
-can.extend(${1:target}, ${2:object1, object2...})
+can.each(${1:object or array}, function( ${2:value}, ${3:index} ) {
+  ${4}
+});
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-object-extend</tabTrigger>
+  <tabTrigger>can-each</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>can.extend() - Merge objects into target object. </description>
+  <description>can.each() - Iterate through an object or array. </description>
 </snippet>

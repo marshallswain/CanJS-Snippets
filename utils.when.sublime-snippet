@@ -1,10 +1,12 @@
 <snippet>
   <content><![CDATA[
-can.extend(${1:target}, ${2:object1, object2...})
+can.when(${1:deferredOne, deferredTwo...}).then(function(${2:resolvedOne, resolvedTwo...}){
+  ${3}
+});
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-object-extend</tabTrigger>
+  <tabTrigger>can-when</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>can.extend() - Merge objects into target object. </description>
+  <description>can.when() - Wait for deferreds to resolve. </description>
 </snippet>

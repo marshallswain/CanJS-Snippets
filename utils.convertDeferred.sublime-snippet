@@ -1,10 +1,12 @@
 <snippet>
   <content><![CDATA[
-can.extend(${1:target}, ${2:object1, object2...})
+function convertDeferred(dfd) {
+  return can.isDeferred(dfd) ? dfd : can.Deferred(dfd);
+}
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-object-extend</tabTrigger>
+  <tabTrigger>can-convertDeferred</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>can.extend() - Merge objects into target object. </description>
+  <description>convertDeferred() - Convert any object to a Deferred.</description>
 </snippet>
