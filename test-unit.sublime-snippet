@@ -1,0 +1,20 @@
+<snippet>
+  <content><![CDATA[
+import QUnit from 'steal-qunit';
+import VM from '${1:path/to/view-model}';
+
+var vm = new VM({
+  ${2:amount: 1}
+});
+
+QUnit.module('${3:Testing Module Description}');
+
+QUnit.test('${4:Test Description}', function(assert) {
+  ${5:ok(vm.attr('amount'), 1, 'The amounts match')}
+});]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>can-test-unit</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.js</scope>
+  <description>Unit Test for a ViewModel.js</description>
+</snippet>

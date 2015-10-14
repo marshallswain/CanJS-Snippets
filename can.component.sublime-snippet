@@ -9,12 +9,12 @@ can.Component.extend({
   tag: '${1:tag-name}',
   template: template,
   viewModel: VM,
-  // helpers:{},
-  // events:{}
+  ${2:helpers:{\},}
+  ${3:events:{\}}
 });
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-modlet-component</tabTrigger>
+  <tabTrigger>can-component</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
   <description>CanJS Modlet Component</description>

@@ -7,7 +7,7 @@ var data = {
   ${1}
 };
 
-can.fixture('POST ${2:/resource/url}', function(){
+can.fixture('${2:POST} ${3:/resource/url}', function(params){
   return data;
 });
 ]]></content>

@@ -1,14 +1,31 @@
 <snippet>
   <content><![CDATA[
 <can-component tag="${1:tag-name}">
+  <style type="less">
+    display: block;
+    
+    p { font-weight: bold; }
+  </style>
   <template>
-    ${2}
+    <p>{{${2:message}}}</p>
   </template>
+  <view-model>
+    import Map from 'can/map/';
+    import 'can/map/define/';
+
+    export default Map.extend({
+      define: {
+        ${2:message}: {
+          value: 'This is the ${1:tag-name} component'
+        }
+      }
+    });
+  </view-model>
 </can-component>
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-stache-component</tabTrigger>
+  <tabTrigger>can-component-web</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope></scope> -->
-  <description>CanJS Stache .component</description>
+  <description>A WebComponent-style CanJS Component</description>
 </snippet>

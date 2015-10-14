@@ -2,7 +2,8 @@
   <content><![CDATA[
 import can from 'can';
 
-can.view.attr('${1:attrName}', function( el, attrData ) {
+// See http://canjs.com/docs/can.view.attr.html for usage.
+can.view.attr('${1:attrName}', function(el, attrData) {
   ${2}
 });
 ]]></content>

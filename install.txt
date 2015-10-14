@@ -5,7 +5,7 @@ Snippets for working with CanJS. http://canjs.com
 
 View the repository to see what is available: https://github.com/marshallswain/CanJS-Snippets
 
-Most of these snippets can be accessed inside .js files.  A few of them are to be used in html or stache templates. (Install the `HTML with Mustaches` package for great highlighting of Stache templates.)
+Most of these snippets are available inside .js files.  A few of them are for html or stache templates. (Install the `HTML with Mustaches` package for great Stache template highlighting.)
 
 Access the snippets by typing `can-`
 

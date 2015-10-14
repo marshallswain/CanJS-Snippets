@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-import $ from 'jquery';
+import \$ from 'jquery';
 import QUnit from 'steal-qunit';
 import F from 'funcunit';
 
@@ -12,21 +12,19 @@ QUnit.module('${1:Test Group Description}', {
   },
 
   afterEach: function() {
-    console.log('afterEach');
     F.win.close();
   }
 });
 
 QUnit.test('${2:Test Name}', function() {
-  F('${3:element selector}').visible(function(){
-    ${4:assertions}
-    // equal(F('.highcharts-markers:first path').size(), 4, 'There should be 4 points on the chart for one series');
+  F('${3:element selector}').${4:visible}(function(){
+    ${5:equal(F('.highcharts-markers:first path').size(), 4, 'There should be 4 points on the chart for one series');}
   });
 });
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>can-modlet-test-js</tabTrigger>
+  <tabTrigger>can-test-funcunit</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <scope>source.js</scope>
-  <description>CanJS Modlet Test.js</description>
+  <description>FuncUnit Test.js</description>
 </snippet>

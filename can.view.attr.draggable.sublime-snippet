@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-import $ from 'jquery';
+import \$ from 'jquery';
 import 'jquery-ui';
 import can from 'can';
 
@@ -11,10 +11,10 @@ import can from 'can';
  */
 can.view.attr('ui-draggable', function(el) {
   // Check if the element has a ui-drag-handle.
-  var $el = $(el),
-    dragHandle = $el.find('[ui-drag-handle]');
+  var \$el = \$(el),
+    dragHandle = \$el.find('[ui-drag-handle]');
 
-  $el.draggable({
+  \$el.draggable({
     handle: (dragHandle.length ? dragHandle : null)
   });
 });
