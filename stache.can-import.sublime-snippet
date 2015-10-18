@@ -1,10 +1,10 @@
 <snippet>
   <content><![CDATA[
-<can-import from="${1:path/to/module}" ${2:export-as="${3:exportName}"} ${4:can-tag="${5:tag-name}"}/>
+<can-import from="${1:path/to/module}" ${2:export-as="${3:exportName}"} />
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>can-import</tabTrigger>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope></scope> -->
-  <description>can-import tag</description>
+  <description>can-import</description>
 </snippet>
